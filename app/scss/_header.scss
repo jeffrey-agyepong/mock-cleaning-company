@@ -1,0 +1,126 @@
+.header {
+  position: fixed;
+  top: 0px;
+
+  width: 100%;
+  z-index: 1;
+  &.open {
+    .header__toggle {
+      > span:first-child {
+        transform: rotate(45deg);
+      }
+      > span:nth-child(2) {
+        opacity: 0;
+      }
+      > span:last-child {
+        transform: rotate(-45deg);
+      }
+    }
+  }
+  .overlay {
+    opacity: 0;
+    position: fixed;
+  }
+  nav {
+    padding: 20px;
+    border-bottom: 2px solid rgb(245, 245, 245);
+  }
+
+  &__ncc {
+    font-family: 'BrandonGrotW01-Light';
+    font-size: 15px;
+    font-weight: 40;
+    color: white;
+  }
+  &__toggle {
+    //Mobile menu
+    > span {
+      display: block;
+      width: 26px;
+      height: 2px;
+      background-color: white;
+      transition: all 300ms ease-in-out;
+      transform-origin: 3px 1px;
+
+      &:not(:last-child) {
+        margin-bottom: 5px;
+      }
+    }
+  }
+  &__menu {
+    position: absolute;
+    background: #343a40;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 1.5rem;
+    width: 100%;
+    a {
+      display: block;
+      text-align: center;
+      padding: 0.5rem;
+      color: white;
+      font-size: 1.5rem;
+    }
+  }
+  &__links {
+    margin-right: 100px;
+    a {
+      font-size: 1.5rem;
+      margin: 0;
+      color: white;
+
+      &:not(:last-child) {
+        padding-right: 1.25em;
+      }
+
+      &:hover {
+        color: blue;
+      }
+    }
+  }
+}
+
+@media (min-width: 640px) {
+  .header {
+    nav {
+      padding: 24px;
+      margin-right: 18px;
+    }
+
+    &__ncc {
+      font-family: 'BrandonGrotW01-Light';
+      font-size: 22px;
+      font-weight: 400;
+      color: white;
+    }
+    &__toggle {
+      //Mobile menu
+      > span {
+        display: block;
+        width: 26px;
+        height: 2px;
+        background-color: white;
+
+        &:not(:last-child) {
+          margin-bottom: 3px;
+        }
+      }
+    }
+
+    &__links {
+      a {
+        font-size: 1.5rem;
+        margin: 0;
+        color: white;
+
+        &:not(:last-child) {
+          padding-right: 1.25em;
+        }
+
+        &:hover {
+          //color: blue;
+        }
+      }
+    }
+  }
+}

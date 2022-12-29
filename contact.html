@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/c30670b0a4.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="//db.onlinewebfonts.com/c/6dd2f2510b4a00a5461b2455928209c2?family=BrandonGrotW01-Light"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./dist/css/style.css" />
+    <script src="dist/components/header.js"></script>
+    <script src="dist/components/footer.js"></script>
+    <title>LOREM CLEANING COMPANY</title>
+  </head>
+
+  <body>
+    <header-component></header-component>
+
+    <div class="container bg-dark contact_section">
+      <section class="section" id="contact">
+        <!-- Contact -->
+        <section class="section" id="contact">
+          <div class="container">
+            <h1 class="center small">Contact Us</h1>
+            <form method="POST" data-netlify="true">
+              <input
+                name="name"
+                type="text"
+                class="feedback-input"
+                placeholder="Name"
+              />
+              <input
+                name="email"
+                type="text"
+                class="feedback-input"
+                placeholder="Email"
+              />
+              <textarea
+                name="text"
+                class="feedback-input"
+                placeholder="Comment"
+              ></textarea>
+              <div class="field">
+                <div data-netlify-recaptcha="true"></div>
+              </div>
+              <input type="submit" value="SEND" />
+            </form>
+          </div>
+        </section>
+      </section>
+    </div>
+    <footer-component></footer-component>
+  </body>
+  <script src="./dist/js/app.js"></script>
+</html>
