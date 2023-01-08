@@ -15,7 +15,7 @@ class Footer extends HTMLElement {
       <div class="grid-container">
 
         <footer> </footer>
-        <footer> Copyright &copy; 2021 <a href="https://conciseweb.netlify.app/">Lorem Cleaning Company/a></footer>
+        <footer> Copyright &copy; 2022 <a href="https://conciseweb.netlify.app/">Lorem Cleaning Company</a></footer>
         <footer><a href=""> Privacy Policy</a></footer>
       </div>
     </div>
